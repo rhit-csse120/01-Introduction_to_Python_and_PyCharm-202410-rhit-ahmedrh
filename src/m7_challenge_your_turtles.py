@@ -4,15 +4,15 @@ Your chance to explore Loops and Turtles!
 Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
          Matt Boutell, Dave Fisher, Sriram Mohan, Mohammed Noureddine,
          Amanda Stouder, Curt Clifton, Valerie Galluzzi, their colleagues and
-         PUT_YOUR_NAME_HERE.
+         Henry Ahmed.
 """
 ###############################################################################
-# TODO: 1.
+# done: 1.
 #   On Line 7 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# done: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #  _
@@ -33,3 +33,40 @@ Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
 #  _
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+window.tracer(50)
+john = rg.SimpleTurtle()
+kam = rg.SimpleTurtle()
+jack = rg.SimpleTurtle()
+halls = rg.SimpleTurtle()
+john.pen = rg.Pen("blue", 1)
+kam.pen = rg.Pen("red", 1)
+jack.pen = rg.Pen("yellow", 1)
+halls.pen = rg.Pen("green", 1)
+john.pen_up()
+kam.pen_up()
+jack.pen_up()
+halls.pen_up()
+for i in range(250):
+    john.go_to((rg.Point(-400, -400)))
+    kam.go_to((rg.Point(400, 400)))
+    jack.go_to((rg.Point(400, -400)))
+    halls.go_to((rg.Point(-400, 400)))
+    kam.left(180)
+    jack.left(90)
+    halls.right(90)
+    john.pen_down()
+    kam.pen_down()
+    jack.pen_down()
+    halls.pen_down()
+    john.draw_square(i*2)
+    kam.draw_square(i*2)
+    jack.draw_square(i * 2)
+    halls.draw_square(i * 2)
+    kam.pen_up()
+    john.pen_up()
+    jack.pen_up()
+    halls.pen_up()
+
+window.close_on_mouse_click()
