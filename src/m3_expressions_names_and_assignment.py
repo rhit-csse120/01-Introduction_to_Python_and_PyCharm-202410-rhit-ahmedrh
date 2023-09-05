@@ -1,8 +1,8 @@
 answer = 2 ** 5
 print(answer * 100)
-
+import math
 ###############################################################################
-# TODO: 1.
+# done: 1.
 #   Read the 2 lines of code ABOVE this _TODO_.
 #   When the Python INTERPRETER runs, that is, when this program runs,
 #   it does the following with that code:
@@ -35,7 +35,7 @@ print(answer * 100)
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# done: 2.
 #   Some things, like addition (+) and subtraction (-), are built into
 #   Python.  Others are defined in modules (aka libraries) that must be
 #   IMPORTED into your program for you to use them.  The trigonometric functions
@@ -69,17 +69,18 @@ print(answer * 100)
 #               (If not, ask for help.)
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
+num1 = 77+math.cos(2.75)
+print(math.sqrt(num1))
 ###############################################################################
-# TODO: 3.
+# done: 3.
 #   Immediately below this _TODO_, write code that computes and prints:
 #      the square root of ((41 * 88) + (4 * the cosine of 2))
 #   Use as few or as many intermediate names as you feel appropriate.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(math.sqrt((41*88)+(4*math.cos(2))))
 ###############################################################################
-# TODO: 4.
+# done: 4.
 #   Immediately below this _TODO_,
 #   write code that computes the square root of 2 in two ways:
 #     1. By using the   math.sqrt   function.
@@ -87,9 +88,10 @@ print(answer * 100)
 #   Print both of the expressions that you write.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(math.sqrt(2))
+print(2**0.5)
 ###############################################################################
-# TODO: 5.
+# done: 5.
 #   Immediately below this _TODO_,
 #   write code that computes and prints:
 #     1. the base-10 logarithm of 1,000,000    (which is 6, as you know)
@@ -100,9 +102,12 @@ print(answer * 100)
 #      math.l   (pausing after the "l" and noting what pops up)
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(type(3.14))
+print(math.log(1000000,3))
+print(math.log2(1000000))
+print(math.log10(1000000))
 ###############################################################################
-# TODO: 6.
+# done: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #  _
