@@ -103,7 +103,7 @@ for k in range(6):
 #   Run the example as it is, then in   window.tracer(10)   below,
 #   change the 10 to 100, run again, and observe the effect.
 ###############################################################################
-window.tracer(10)  # Bigger numbers make the animation run faster
+window.tracer(1)  # Bigger numbers make the animation run faster
 
 another_turtle = rg.SimpleTurtle("triangle")
 another_turtle.pen = rg.Pen("magenta", 1)

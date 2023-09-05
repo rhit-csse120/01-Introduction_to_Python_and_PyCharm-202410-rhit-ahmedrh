@@ -4,15 +4,15 @@ An exercise that summarizes what you have learned in this Session.
 Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
          Matt Boutell, Dave Fisher, Sriram Mohan, Mohammed Noureddine,
          Amanda Stouder, Curt Clifton, Valerie Galluzzi, their colleagues and
-         PUT_YOUR_NAME_HERE.
+         Henry Ahmed.
 """
 ###############################################################################
-# TODO: 1.
+# done: 1.
 #   On Line 7 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# done: 2.
 #   Write code that accomplishes the following (and ONLY the following),
 #   in the order listed:
 #  _
@@ -40,9 +40,22 @@ Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
 #  _
 #   As always, test by running the module.
 ###############################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+ken = rg.SimpleTurtle()
+ken.pen = rg.Pen("blue",15)
+ken.left(90)
+ken.forward(200)
+ken.pen_up()
+ken.go_to(rg.Point(100, -40))
+ken.pen_down()
+ken.pen.color = 'green'
+ken.pen.thickness = 10
+ken.left(180)
+ken.forward(150)
 
 ###############################################################################
-# TODO: 3. After you have successfully written and tested code per the above
+# done: 3. After you have successfully written and tested code per the above
 #   (get help as needed!), be sure that you understand how to:
 #     -- CONSTRUCT an INSTANCE of a CLASS (we call such instances OBJECTS).
 #     -- Make an object   ** DO **   something by using a METHOD.
@@ -53,3 +66,4 @@ Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
 #  _
 #   As always, COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+window.close_on_mouse_click()
