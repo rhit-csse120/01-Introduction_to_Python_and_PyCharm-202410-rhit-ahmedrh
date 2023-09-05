@@ -12,10 +12,10 @@ Also:
 Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
          Matt Boutell, Dave Fisher, Sriram Mohan, Mohammed Noureddine,
          Amanda Stouder, Curt Clifton, Valerie Galluzzi, their colleagues and
-         PUT_YOUR_NAME_HERE.
+         Henry Ahmed.
 """
 ###############################################################################
-# TODO: 1.
+# done: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #  _
 #   On Line 15 above, replace   PUT_YOUR_NAME_HERE   with your OWN name.
@@ -28,7 +28,7 @@ Authors: David Mutchler, Yiji Zhang, Mark Hays, Derek Whitley, Vibha Alangar,
 import rosegraphics as rg
 
 ###############################################################################
-# TODO: 2.
+# done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -45,7 +45,7 @@ import rosegraphics as rg
 ###############################################################################
 
 ###############################################################################
-# TODO: 3.
+# done: 3.
 #   Run this module.  A window will pop up and Turtle objects will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -119,7 +119,7 @@ natasha.speed = 1  # Now slower
 natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
-# TODO: 4.
+# done: 4.
 #   Your instructor will explain (live, or in a Follow-Me video)
 #   the so-called "dot-trick", which means to type an expression,
 #   then a DOT (period), then PAUSE.  Try it out yourself by typing
@@ -142,9 +142,16 @@ natasha.go_to(rg.Point(-100, 200))
 #  _
 #   As always, test by running the module.
 ###############################################################################
-
+natasha.speed += 30
+natasha.draw_circle(50)
+natasha.pen_up()
+natasha.left(90)
+natasha.forward(100)
+natasha.pen_down()
+natasha.right(90)
+natasha.draw_circle(50)
 ###############################################################################
-# TODO: 5.
+# done: 5.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtle objects move some more and/or have different characteristics.
 #  _
@@ -153,9 +160,17 @@ natasha.go_to(rg.Point(-100, 200))
 #  _
 #   As always, test by running the module.
 ###############################################################################
-
+boris.pen = rg.Pen('purple', 5)
+boris.speed = 15
+boris.draw_circle(50)
+boris.left(90)
+boris.pen_up()
+boris.forward(100)
+boris.pen_down()
+boris.right(90)
+boris.draw_circle(50)
 ###############################################################################
-# TODO: 6.
+# done: 6.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -183,9 +198,13 @@ natasha.go_to(rg.Point(-100, 200))
 #  _
 #   As always, test by running the module.
 ###############################################################################
-
+kenny = rg.SimpleTurtle("classic")
+kenny.speed = 10
+kenny.pen = rg.Pen("yellow", 8)
+kenny.forward(50)
+kenny.draw_regular_polygon(6, 100)
 ###############################################################################
-# TODO: 7.
+# done: 7.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #  _
